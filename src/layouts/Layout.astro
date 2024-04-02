@@ -24,10 +24,10 @@ const  {currentLocale} = Astro
 </html>
 
 <style is:global>
-	html {
-		font-family: Menlo,Monaco, Lucida Console,'Courier New',Courier, momonospace;
-		background: #fff;
-		
+	html{
+			background: linear-gradient(45deg ,#30003a,#120913);
+			font-family: Menlo,Monaco, Lucida Console,'Courier New',Courier, momonospace;
+			color: #fff;
 	}
 
 	@media (width <= 80em) {
@@ -66,12 +66,7 @@ const  {currentLocale} = Astro
 		box-sizing: border-box;
 	}
 
-	@media (prefers-color-scheme: dark) {
-		html{
-			background: linear-gradient(45deg ,#30003a,#120913);
-			color: #fff;
-		}
-	}
+
 
 	h1,h2,h3,h4 {
 		margin: 0;
@@ -91,9 +86,15 @@ const  {currentLocale} = Astro
 	}
 
 	@media print {
+
+		html {
+		
+		background: #fff;
+		
+		}
 		.no-print {
 			display: none !important;
-		}
+		}		
 	}
 
 	@media print {
