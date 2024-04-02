@@ -1,6 +1,6 @@
 # Portafolio personal
 
-## Mírala aquí: https://israel-f-portfolio.netlify.app/en/
+## Mírala aquí: https://israel-f-portfolio.netlify.app
 ###
 
 Portafolio personal sobre mi experiencia como desarrallador. Es un diseño minimalista inpirado en el que Midudev muestra en su curso sobre astro. El sieño es reponsive y adaptable. La información proviene de dos archivos json, lo que hace las posibles actualizaciones de la página mucho más rápidas y eficientes al no tener que cambiar los componentes directamente. Usa ninja keys para poder ejecutar comandos como imprimir a PDF. En el diseño móvil los comandos son sustituidos por un botón que permite la impresión.
