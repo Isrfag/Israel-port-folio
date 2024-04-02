@@ -1,6 +1,6 @@
 # Portafolio personal
 
-## Mírala aquí: 
+## Mírala aquí: https://israel-f-portfolio.netlify.app/en/
 ###
 
 Portafolio personal sobre mi experiencia como desarrallador. Es un diseño minimalista inpirado en el que Midudev muestra en su curso sobre astro. El sieño es reponsive y adaptable. La información proviene de dos archivos json, lo que hace las posibles actualizaciones de la página mucho más rápidas y eficientes al no tener que cambiar los componentes directamente. Usa ninja keys para poder ejecutar comandos como imprimir a PDF. En el diseño móvil los comandos son sustituidos por un botón que permite la impresión.
@@ -19,7 +19,7 @@ Dos versiones en ingles y en español.
 
 # Personal Portfolio
 
-## Cheeck it here: 
+## Cheeck it here: https://israel-f-portfolio.netlify.app/en/
 ###
 
 My personal portfolio as software developer. I used a minimalist design inpired into Midudev Astro course. The page is responsive and mobile friendly. My data come from two json archives so it's so easy to update the information in as much as it's not necessary to rewrite the components. I used the ninja keys library in order to create differents commands or to print as a CV in PDF futhermore the mobile design has a button for printing. It has been written in spanish and english languages. 
