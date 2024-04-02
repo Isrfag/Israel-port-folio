@@ -1,54 +1,33 @@
-# Astro Starter Kit: Basics
+# Portafolio personal
 
-```sh
-npm create astro@latest -- --template basics
-```
+## Mírala aquí: 
+###
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Portafolio personal sobre mi experiencia como desarrallador. Es un diseño minimalista inpirado en el que Midudev muestra en su curso sobre astro. El sieño es reponsive y adaptable. La información proviene de dos archivos json, lo que hace las posibles actualizaciones de la página mucho más rápidas y eficientes al no tener que cambiar los componentes directamente. Usa ninja keys para poder ejecutar comandos como imprimir a PDF. En el diseño móvil los comandos son sustituidos por un botón que permite la impresión.
+Dos versiones en ingles y en español.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Tecnología usada:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+1. Astro junto a i18n (Cambio de idioma)
+2. Librería ninja keys.
+3. Json
 
-## 🚀 Project Structure
+### Proyecto realizado por Israel Fernández Agudo
 
-Inside of your Astro project, you'll see the following folders and files:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### ---English:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+# Personal Portfolio
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Cheeck it here: 
+###
 
-Any static assets, like images, can be placed in the `public/` directory.
+My personal portfolio as software developer. I used a minimalist design inpired into Midudev Astro course. The page is responsive and mobile friendly. My data come from two json archives so it's so easy to update the information in as much as it's not necessary to rewrite the components. I used the ninja keys library in order to create differents commands or to print as a CV in PDF futhermore the mobile design has a button for printing. It has been written in spanish and english languages. 
 
-## 🧞 Commands
+## Tech used
 
-All commands are run from the root of the project, from a terminal:
+1. Astro alongside i18n (Language change)
+2. Ninja keys library
+3. Json
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Project created by Israel Fernández Agudo.

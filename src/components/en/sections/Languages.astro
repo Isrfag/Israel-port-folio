@@ -1,0 +1,31 @@
+---
+import Section from "@/components/Section.astro";
+
+import {languages} from '@cvEn'
+
+---
+
+<Section title="Languages">
+
+    <ul>
+        {
+            languages.map(({language, fluency}) => (
+
+            <li>
+                <h3>{language}</h3>
+                <br>
+                <h4>{fluency}</h4>
+                <br>
+            </li>
+            ))
+        }
+    </ul>
+</Section>
+
+<style>
+    
+    h4 {
+        color: #bebebe;
+
+    }
+</style>

@@ -1,0 +1,42 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import About from '@/components/en/sections/About.astro';
+import Education from '@/components/en/sections/Education.astro';
+import Experience from '@/components/en/sections/Experience.astro';
+import Header from '@/components/en/sections/Header.astro';
+import Projects from '@/components/en/sections/Projects.astro';
+import Skills from '@/components/en/sections/Skills.astro';
+import KeyboardManager from '@/components/en/KeyboardManager.astro';
+import Languages from '@/components/en/sections/Languages.astro';
+import Courses from '@/components/en/sections/Courses.astro';
+import LanguageManager from '@/components/LanguageManager.astro';
+
+
+---
+
+<Layout title="Personal Portfolio">
+		<main>
+			<LanguageManager/>
+			<Header/>
+			<About/>
+			<Experience/>
+			<Education/>
+			<Projects/>
+			<Skills/>
+			<Courses/>
+			<Languages/>
+		</main>
+		<KeyboardManager/>
+	
+</Layout>
+
+
+<style>
+	main {
+		padding: 4rem;
+		margin: auto;
+		width: 100%;
+
+	}
+	
+</style>

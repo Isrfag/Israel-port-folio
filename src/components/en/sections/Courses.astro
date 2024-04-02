@@ -1,0 +1,63 @@
+---
+import Section from "@/components/Section.astro";
+
+import {courses} from '@cvEn'
+
+
+---
+
+<Section title="Courses">
+
+    <ul>
+        {
+            courses.map(({title,date,url,creator}) => {
+
+                return (
+
+                <li>
+                    <div class="courses-container">
+                        <h3>{title}</h3>
+                        <time>{date}</time>
+
+                        <div>
+                            <a href={url} target="_blank">{url}</a>
+                        </div>
+
+                        <h4>{creator}</h4>
+                    </div>  
+                </li>
+
+            )})
+
+        }
+    </ul>
+
+</Section>
+
+<style>
+
+    .courses-container {
+        padding: 8px;
+    }
+
+    .courses-container a {
+        text-decoration: none;
+        color: aqua;
+        font-size: 0.85rem;
+    }
+
+    .courses-container a:hover {
+        text-decoration: underline;
+    }
+
+    @media (width <=80em) {
+
+        .courses-container a {
+            font-size: 0.5rem;
+        }
+
+    }
+    
+    
+    
+</style>

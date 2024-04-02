@@ -1,0 +1,93 @@
+---
+const  {currentLocale} = Astro
+---
+<section class="no-print">
+{
+    currentLocale==='en' ?
+		<div>
+			<a href={'/'}><span class="active">EN</span> <span class="no-active">/ES</span></a>
+		</div>
+        <aside>
+            <button class="PrintHandler"> Print CV ⬇️</button>
+        </aside>
+						:
+		<div>
+			<a href={'/en'}><span class="active">ES</span> <span class="no-active">/EN</span></a>
+		</div>
+        <aside>
+            <button class="PrintHandler"> Imprimir CV ⬇️</button>
+        </aside>    
+}
+</section>
+
+<script>
+    const handlePrint = () => {
+        window.print();
+    }
+
+    const btn = document.querySelector('.PrintHandler');
+    btn?.addEventListener('click',handlePrint);
+
+</script>
+
+
+<style>
+
+    .no-print {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        
+    }
+
+    .no-active {
+        opacity: 20%;
+        transition: ease-in-out 0.3s;
+    }
+    .no-active:hover {
+        opacity: 100%;
+        
+    }
+
+    .active {
+        cursor:auto;
+    }
+
+    aside {
+        display: none;
+        margin-top: 0px;
+    }
+
+    aside button {
+        background-color: #120913;
+        color: #fff;
+        border: 1px solid #adadad;
+        border-radius: 6px;
+        padding: 5px;
+    }
+
+
+    @media (width <= 80rem) {
+        
+        .no-print {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        aside {
+            display: flex;
+            padding-left: 50px;
+            
+         }
+
+    }
+</style>

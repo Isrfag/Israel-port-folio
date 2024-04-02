@@ -1,0 +1,96 @@
+---
+import Section from "../Section.astro";
+
+import {projects} from '@cv'
+---
+
+<Section title="Proyectos">
+    <ul>
+        {
+            projects.map( ({name,description,type,isActive,url}) => (
+                <li>
+                    <article>
+                        <header>
+                           <h3>{name}{isActive && <span> &bull;</span>}</h3>
+                           <p>{description}</p>
+                           <h4>{type}</h4>
+                        </header>
+                        <footer>
+                            <h4> urls:</h4>
+                            <ul class="urlList">
+                                {url.map(u => (
+                                    <li>
+                                        <a href={u} 
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >{u.includes('github') ? 'Github' : 'Vista del proyecto'}</a>
+                                    </li>))}
+                            </ul>
+                        </footer>
+                    </article>    
+                </li>
+
+            ) )
+        }
+    </ul>
+</Section>
+
+<style>
+    ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(200px,1fr)
+            );
+        gap: 1.5rem;
+        margin-inline: -32px ;
+    }
+    .urlList {
+        gap: 0.1rem;
+    }
+
+    article {
+        border-radius: 8px;
+        border: 1px solid white;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        height: 100%;
+        width: 105%;
+    }
+
+    article header {
+        flex: 1;
+    }
+
+    article h3 span{
+        color: rgb(2, 226, 69);
+        
+    }
+
+    article p {
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        text-align: left;
+        font-size: 0.7rem;
+    }
+
+    footer a {
+        color: aqua;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+
+</style>

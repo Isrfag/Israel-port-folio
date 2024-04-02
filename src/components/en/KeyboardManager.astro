@@ -1,0 +1,187 @@
+---
+import {basics} from '@cvEn'
+const {profiles} = basics
+const SOCIAL_ICONS: Record<string,string> = {
+    GitHub : `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                <svg style="margin-right:8px" width=16px height=16px 
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                width="1024"
+                height="1024"
+                viewBox="0 0 1024 1024"
+                fill="none"
+                version="1.1"
+                id="svg835"
+                sodipodi:docname="Octicons-mark-github.svg"
+                inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
+                <metadata
+                    id="metadata841">
+                    <rdf:RDF>
+                    <cc:Work
+                        rdf:about="">
+                        <dc:format>image/svg+xml</dc:format>
+                        <dc:type
+                        rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                    </cc:Work>
+                    </rdf:RDF>
+                </metadata>
+                <defs
+                    id="defs839" />
+                <sodipodi:namedview
+                    pagecolor="#ffffff"
+                    bordercolor="#666666"
+                    borderopacity="1"
+                    objecttolerance="10"
+                    gridtolerance="10"
+                    guidetolerance="10"
+                    inkscape:pageopacity="0"
+                    inkscape:pageshadow="2"
+                    inkscape:window-width="1440"
+                    inkscape:window-height="798"
+                    id="namedview837"
+                    showgrid="false"
+                    inkscape:zoom="0.60449219"
+                    inkscape:cx="512"
+                    inkscape:cy="512"
+                    inkscape:window-x="0"
+                    inkscape:window-y="25"
+                    inkscape:window-maximized="0"
+                    inkscape:current-layer="svg835" />
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                    transform="scale(64)"
+                    fill="#1B1F23"
+                    id="path833"
+                    style="fill:#fff;fill-opacity:1" />
+                </svg>
+                `,
+                LinkedIn: `<svg xmlns="http://www.w3.org/2000/svg" style="margin-right:8px" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 48 48">
+                    <path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"></path>
+                    </svg>
+                    `
+}
+
+const profilesInfo = profiles.map( ({network, url}) => {
+    const icon = SOCIAL_ICONS[network]
+    const firstLetter = network[0].toUpperCase()
+
+    return {
+        id: network,
+        section: 'Social',
+        title: `Visit my ${network}`,
+        url,
+        icon,
+        hotkey: `ctrl+${firstLetter}`,
+        
+    }
+})
+
+---
+
+
+
+<footer class="no-print" id="commands">
+    Press <kbd class="key">Alt</kbd>/<kbd class="key">Cmd</kbd> + <kbd class="key">K</kbd> to open the command menu
+</footer>
+
+<ninja-keys class="commands" data-info= {JSON.stringify(profilesInfo)} placeholder="Search command" hideBreadcrumbds>
+</ninja-keys>
+
+<script>
+    import "ninja-keys"
+    const ninja = document.querySelector("ninja-keys")
+    if(ninja!==null) {
+        const info = ninja.getAttribute('data-info') ?? '[]'
+        const paredInfo = JSON.parse(info) 
+        const data = paredInfo.map((infoItem: any) => {
+
+            return {
+                ...infoItem,
+                handler: () => {
+                    window.open(infoItem.url, "_blank")
+                }
+            }
+        })
+
+        ninja.data = [
+            {
+                id:"print",
+                title:"Imprimir",
+                icon:`<svg style= "margin-right:8px" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" />
+                    </width=svg>
+`,
+                hotkey: "ctrl+P",
+                section: "Actions",
+                handler : () => {
+                    window.print()
+                },
+                
+            },
+            ...data
+        ]
+    }
+</script>
+    
+
+<style>
+
+@media print {
+		ninja-keys {
+            display: none !important;
+        }
+	}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    background:  #240025;
+    border-top: 1px solid #eee;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-block: 6px;
+    text-align: center;
+    z-index: center;
+    font-size: 0.85rem;
+    view-timeline-name: --revealing;
+    view-timeline-axis: block;
+
+    animation: linear 0.3s fadeIn;
+    animation-timeline: --revealing;
+    animation-range: entry 100% cover 10%;
+
+}
+
+.key {
+    background: gray;
+    border-radius: 8px;
+    padding: 3px 6px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.commands {
+    --ninja-modal-background: black;
+    --ninja-selected-background:rgb(158, 158, 158);
+    --ninja-text-color:white;
+    --ninja-secondary-background-color: rgb(82, 82, 82);
+    --ninja-secondary-text-color: white;
+    --ninja-footer-background: black;
+}
+    
+</style>

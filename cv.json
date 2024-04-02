@@ -1,0 +1,327 @@
+{
+    "basics": {
+      "name": "Israel Fernández Agudo",
+      "label": "Java Software Developer y Web Developer con 1 año de experiencia en la creación de proyectos BackEnd y FrontEnd ",
+      "image": "/me.webp",
+      "email": "isrfag@gmail.com",
+      "phone": "+34 625019503",
+      "url": "",
+      "summary": "En el mundo del desarrollo del software durante mas de 2 años desde que comencé mis estudios. Actualmente cuento con algo más de un año de experiencia creando proyectos de desarrollo web, tanto en el lado del servidor(usando java) como en el lado del cliente (usando html,css,javascript,react,astro...). \n Cuento también con la experiencia de un pequeño desarrollo de la web de una boda, web cuyo frontend y backend cree y diseñé yo. Tengo tambíen cierta experiencia desarrollando en Android, experiencia que adquirí durante mis estudios DAM.",
+      "location": {
+        "address": "C Obispos nº8",
+        "postalCode": "18170",
+        "city": "Granada",
+        "countryCode": "ES",
+        "region": "España"
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "israelfernandez",
+          "url": "https://www.linkedin.com/in/israel-fernández-agudo-459273279/"
+        },
+        {
+          "network": "GitHub",
+          "username": "isrfag",
+          "url": "https://github.com/Isrfag"
+        }
+      ]
+    },
+    "work": [
+      {
+        "name": "Proyectos Github Frontend, Backend y Full Stack.",
+        "position": "Creador de proyectos",
+        "url":"https://github.com/Isrfag?tab=repositories",
+        "startDate": "2023-09-20",
+        "endDate": null,
+        "summary": "Creación de proyectos usando lo aprendido en mi formación y lo que aprendo diariamente sobre nuevas tecnologías. He realizado proyectos tanto frontend (tanto js y css vanilla, como con los frameworks React, Astro, Tailwind, Bootsrap etc ), como Backend,con Springboot y alguno que otro con node y C#.",
+        "highlights": [
+          "Proyectos nuevos cada semana"
+        ]
+      },
+      {
+        "name": "Desarrollo web freelance",
+        "position": "Lead Project worker",
+        "url": "https://github.com/Isrfag/Wedding-webpage",
+        "startDate": "2023-04-26",
+        "endDate": "2023-07-15",
+        "summary": "Lideré la creación de una web para una novia. La web contenía la información sobre la ceremonia y los novios, la localización de la misma, hoteles cercanos a esta y un formulario de asistencia cuyos datos eran enviados gracias a dos archivos Php a una base de datos MySql, allí eran recuperados y guardados. El formulario estaba protegido por contraseña y reCaptchav2. El frontend fue hecho con html,css y javascript. El backend con Php, Hostinguer y PhpMyAdmin.",
+        "highlights": [
+          "Proyecto totalmente individual"
+        ]
+      }
+    ],
+    "volunteer": [{
+      "organization": "Floristería kika",
+      "position": "Manejo de sistemas informáticos y creador de software de facturas",
+      "url": "https://www.floristeriakika.es",
+      "startDate": "2023-01-01",
+      "endDate": null,
+      "summary": "Ayudo a la digitalización en empresa familiar, creando las redes sociales, gestionando los sistemas informáticos y con la creación de un software para la gestión y creación de facturas (Creado en Java para windows 98)",
+      "highlights": [
+        "Ayuda sin ánimo de lucro"
+      ]
+    }],
+    "education": [{
+      "institution": "Campus Training",
+      "url": "https://www.campustraining.es/fp-oficial-grado-superior-desarrollo-aplicaciones-multiplataforma-dam/",
+      "area": "Desarrollo de aplicaciones multiplataforma (DAM)",
+      "studyType": "Grado superior",
+      "startDate": "2021-09-15",
+      "endDate": "2023-09-01",
+      "score": "9.5",
+      "courses": [
+        "Sistemas informáticos",
+        "Bases de datos",
+        "Programación",
+        "Lenguajes de marcas y sistemas de gestión de la información",
+        "Entornos de desarrollo",
+        "Acceso a datos",
+        "Programación en dispositivos móviles",
+        "Desarrollo de Interfaces",
+        "Programación de servicios y procesos",
+        "Sistemas de gestión empresarial",
+        "Formación y orientación laboral",
+        "Empresa e iniciativa emprendedora"
+      ]
+    },{
+        "institution":"Campus Training",
+        "url":"https://www.campustraining.es/noticias/certificado-profesionalidad-nivel-3/",
+        "area":"Prevención de riesgos laborales",
+        "studyType":"Certificado de profesionalidad",
+        "startDate":"2023-08-15",
+        "endDate":"2023-09-01",
+        "score":"8",
+        "courses":["Prevención de riesgos laborales - 60hrs "]
+    },{
+        "institution":"IES Cartuja",
+        "url":"https://www.iescartuja.es",
+        "area":"Bachillerato de Ciencias Sociales",
+        "studyType":"Bachillerato",
+        "startDate":"2016-09-12",
+        "endDate":"2018-05-25",
+        "score":"8.55",
+        "courses":[
+          "Bachillerato de ciencias Sociales"
+        ]
+    }
+    
+],
+    "courses": [{
+      "title": "Curso de React por Midudev",
+      "date": "2023-05-22",
+      "url": "https://www.youtube.com/watch?v=7iobxzd_2wY&list=PLUofhDIg_38q4D0xNWp7FEHOTcZhjWJ29",
+      "creator": "Midudev"
+    },{
+        "title": "Curso de Node por Midudev",
+        "date": "2023-07-24",
+        "url": "https://www.youtube.com/watch?v=yB4n_K7dZV8&list=PLUofhDIg_38qm2oPOV-IRTTEKyrVBBaU7",
+        "creator": "Midudev"
+    },{
+        "title": "Curso de Java OCA 1Z0-819",
+        "date": "2023-03-10",
+        "url": "https://www.youtube.com/watch?v=VXiCiPYqFMg&t=5638s",
+        "creator": "Atl Academy"
+      }
+
+],
+    "skills": [
+      {
+        "name": "HTML",
+        "level": "Master",
+        "keywords": [
+          "Desarrollo Web", "Frontend"
+        ]
+      },
+      {
+        "name": "CSS",
+        "level": "Bueno",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "Diseño Responsive"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "level": "Bueno",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+        ]
+      },
+      {
+        "name": "React",
+        "level": "Bueno",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+        ]
+      },
+      {
+        "name": "Tailwind",
+        "level": "Bueno",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "level": "Bueno",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+        ]
+      },
+      {
+        "name": "Git",
+        "level": "Avanzado",
+        "keywords": [
+          "Control de Versiones", "Colaboración", "Código Fuente"
+        ]
+      },
+      {
+        "name": "GitHub",
+        "level": "Avanzado",
+        "keywords": [
+          "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+        ]
+      },
+      {
+        "name": "Java",
+        "level": "Avanzado",
+        "keywords": [
+          "Backend", "Lenguaje tipado fuerte","Estructuras de datos","Programación orientada a objetos","MVC","Programción funcional"
+        ]
+      },{
+        "name": "MySQL",
+        "level": "Avanzado",
+        "keywords": [
+          "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        ]
+      },
+      {
+        "name":"Springboot",
+        "level":"Avanzado",
+        "keywords": [
+            "Desarrollo Web","Backend","Framework de Java","API","Servidores","JWT","Spring Security","Maven","Gradle","Arquitectura hexagonal"
+        ]
+      },
+      {
+        "name": "Node",
+        "level": "Medio",
+        "keywords": [
+          "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+        ]
+      },
+      {
+        "name":".Net",
+        "level":"Medio",
+        "keywords":[
+            "Desarrollo de escritorio","Backend",".NET","C#"
+        ]
+      },{
+        "name":"Android Studio",
+        "level":"Medio",
+        "keywords":[
+            "Desarrolo móvil","Aplicaciones moviles","Kotlin","JetPack Compose","XML","Gradle"
+        ]
+      },{
+        "name":"Kotlin",
+        "level":"Medio",
+        "keywords":[
+            "JVM","Alternativa a Java","Kotlin Multiplatform","Jetbrains","Expresiones Lambda"
+        ]
+
+      }
+    ],
+    "languages": [
+      {
+        "language": "Español",
+        "fluency": "Nativo"
+      },
+      {
+        "language": "Inglés",
+        "fluency": "Avanzado (prepando examen de C1)"
+      }
+    ],
+    "interests": [{
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }],
+    "references": [{
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }],
+    "projects": [
+      {
+        "name": "Sistema de alumnos",
+        "isActive": false,
+        "description": "Proyecto full stack que conecta un frontend hecho en react con un backend Springboot conectado a una base de datos MySQL. Permite la gestión de alumnos, ya sea añadiendo, editando, eliminando o para ver el perfil de alguno de los disponibles.",
+        "type": "Full Stack project",
+        "url": [
+            "https://github.com/Isrfag/Students-Management-Sys-Frontend",
+            "https://github.com/Isrfag/Students-Management-Sys-Backend",
+            "https://www.linkedin.com/feed/update/urn:li:activity:7170004372649558016/"
+        ]
+      },
+      {
+        "name": "Sistema login/resgiter",
+        "isActive": false,
+        "description": "Sistema de login con autentificación JWT para las rutas privadas con Springboot y Spring Security. El resultado final es una API que puede ser usada a modo de CRUD para guardar nuevos usuarios(ruta pública) y para consultarlos (admin en ruta privada)",
+        "type": "Backend project",
+        "url": ["https://github.com/Isrfag/Login-Backend-JWT-SpringSecurity"]
+      },
+      {
+        "name": "TodoApp con A.H.",
+        "isActive": false,
+        "description": "Backend para una todoApp usando la arquitectura hexagonal(ports-adapters) con Springboot. La aplicación está construída haciendo uso de todos los principos SOLID. Conecta con una Fake API externa para proporcionar información sobre los usuarios que ralizan las tareas.",
+        "type": "Backend project",
+        "url": ["https://github.com/Isrfag/Backend-TodoApp-Hexagonal-Architecture"]
+      },
+      {
+        "name": "Enviador de emails",
+        "isActive": false,
+        "description": "Aplicación backend que se encarga de mandar emails haciendo uso de Thymeleaf. El email se manda haciendo uso de la cuenta de gmail que la persona que vaya a usar la aplicación.",
+        "type": "Backend project",
+        "url": ["https://github.com/Isrfag/Email-Sender-Backend-App"]
+      },
+      {
+        "name": "API Rest de países",
+        "isActive": false,
+        "description": "Proyecto en Springboot que conecta una API Externa de países con nuestra propia Api y guarda en una base de datos local el nombre y la población de cada uno de ellos.",
+        "type": "Backend project",
+        "url": ["https://github.com/Isrfag/Prueba-Backend-SDG-Group"]
+      },
+      {
+        "name": "Web personal",
+        "isActive": false,
+        "description": "Proyecto que hice como regalo de navidad para mi pareja, es una landing page construída en react y con tailwindcss",
+        "type": "Frontend project",
+        "url": ["https://github.com/Isrfag/Lucia-web-page",
+                "https://lgomezmoronsite.netlify.app"]
+      },
+      {
+        "name": "App del Clima",
+        "isActive": false,
+        "description": "Aplicación de consulta del clima usando reactjs que realiza un doble fetch a la WeatherApi de Open weather para mostrar el clima en tiempo real",
+        "type": "Frontend project",
+        "url": ["https://github.com/Isrfag/Weather-app-react",
+                "https://weatherappisrf.netlify.app"]
+      },
+      {
+        "name": "Buscador de peliculas",
+        "isActive": false,
+        "description": "Proyecto realizado mientras aprendía react, realiza un fetch a una API de películas y muestra los resultados",
+        "type": "Frontend project",
+        "url": ["https://github.com/Isrfag/movie-search-react",
+                "https://search-engine-movies-app.netlify.app"]
+      },
+      {
+        "name": "Gestión de usuarios (desktop)",
+        "isActive": false,
+        "description": "Proyecto realizado mientras cursaba la asignatura de programación y acceso a datos. Se basa en un windows form creado en C# que conecta y hace operaciones CRUD en una base de datos MySql local",
+        "type": "Desktop Application",
+        "url": ["https://github.com/Isrfag/Gestion-clientes-cSharp"]
+      }
+
+    ]
+  }

@@ -1,0 +1,115 @@
+---
+import Section from "@/components/Section.astro";
+
+import { work } from '@cvEn'
+---
+<Section title="Experience">
+
+    <ul>
+        {work.map(({name, position, url , startDate, endDate, summary, highlights}) => {
+
+            const startYear = new Date(startDate).getFullYear()
+            const endYear = endDate != null ? new Date(endDate).getFullYear() : 'Actually'
+            const years = `${startYear} - ${endYear}`
+
+            return (
+            <li>
+                <article>
+                    <header>
+                        <div>
+                            <h3>{name}</h3>
+                            <h4>{position}</h4>
+                        </div> 
+                        <time>{years}</time>
+                    </header>
+                    
+                    <footer>
+                        <div>
+                            <a 
+                            href={url}
+                            target="_blank"
+                            >
+                                {url}
+                            </a>
+                        </div>
+                        <p>{summary}</p>
+                    </footer>   
+                    
+            </article>
+            </li>
+            )
+        })}
+    </ul>
+
+
+</Section>
+
+
+<style>
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    article h3 {
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    article h4 {
+        color: aliceblue;
+        font-weight: 400;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 4px;
+    }
+
+    footer div {
+        display: flex;
+        margin: 12px 200px 12px 0px;
+        justify-content: center;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: aqua;
+        font-size: 0.85rem;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    time {
+        color: #666;
+        font-size: 0.85rem;
+    }
+
+
+    @media (width<= 80em) {
+
+        ul {
+            display: block;
+        }
+
+        header {
+            display: block;
+        }
+
+        footer div {
+        display: block;
+        }
+
+        footer a {
+            font-size: 0.65rem;
+        }
+
+}
+
+</style>

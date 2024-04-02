@@ -1,0 +1,120 @@
+---
+import Section from "@/components/Section.astro";
+
+import { education } from '@cvEn'
+---
+
+<Section title="Education">
+
+    <ul>
+        {education.map(({institution, url,area,studyType,startDate,endDate,score,courses})=>{
+
+            const startYear = new Date(startDate).getFullYear()
+            const endYear = endDate !=null ? new Date(endDate).getFullYear() : 'Actualmente'
+            const years = `${startYear} - ${endYear}`
+
+            return (
+                <li>
+                    <article>
+                        <header>
+                            <div>
+                                <h3>{area}</h3>
+                                <h4> Education level: {studyType}</h4>
+                                <h4> Education center: {institution}</h4>
+                                <h4> Score: {score} </h4>
+                            </div>
+                            <time>{years}</time>    
+                        </header>
+                        <footer>
+                            <ol>
+                                {area==='Higher Technical Certificate of Software Development' ? <p>Modules learned:</p> : ''}
+                                {area==='Higher Technical Certificate of Software Development' ? courses.map(course => (
+                                    <li>{course}</li>
+                                )) : ''}
+                            </ol>
+                        </footer>
+                        
+                    </article>
+                    
+                </li>
+            )
+        })}
+    </ul>
+</Section>
+
+<style>
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap:32px;
+    }
+
+    article h3 {
+        font-weight: 500;
+        color : #fff
+    }
+
+    article h4 {
+        font-weight: 400;
+        color:#666 ;
+    }
+
+    header {
+        display: flex;
+        justify-content:space-between;
+        align-items:flex-start;
+        margin-bottom: 4px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p {
+        color:rgb(201, 201, 201);
+        font-size: 1.2rem;
+    }
+
+    ol {
+        color: #666;
+    }
+
+    time {
+        color: #666;
+        font-size: 0.85rem;
+    }
+
+    @media (width<=80em ) {
+        
+        header {
+            display: block;
+        }
+
+       header div {
+        padding-bottom: 10px;
+       }
+
+       footer {
+        padding-top: 15px;
+       }
+
+       footer p {
+        font-size: 0.8rem;
+        padding-bottom: 5px;
+       }
+
+       footer li {
+        font-size: 0.75rem;
+        padding-top:1px ;
+        padding-bottom: 1px;
+       }
+           
+       
+    }
+    
+    
+</style>
+
