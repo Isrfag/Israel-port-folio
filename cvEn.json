@@ -253,6 +253,14 @@
     }],
     "projects": [
       {
+        "name": "Burger MAUI App",
+        "isActive": false,
+        "description": "Mobile Full Stack app wich frontend has been made with .netMAUI, it emulates a burger shop and allows to users (thanks to a login and registers system) to deliver any of it's profucts using a shopping cart. It uses an API built with ASP.NET Core y and a shared resource( for the dtos)",
+        "type": "Full Stack project",
+        "url": [
+            "https://github.com/Isrfag/DotNetMAUIBurgerAppFullStack"
+        ]
+      },{
         "name": "Students system",
         "isActive": false,
         "description": "Full stack project that conects a react client side app with a Springboot backend simultaneously to a MySQL database. It manage the data from the students and allows to add, edit, delete or have a detailed view from them.",
